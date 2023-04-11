@@ -19,18 +19,13 @@ namespace GestionBiblio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            gestionperiodique a = new gestionperiodique();
+            gestionemp a = new gestionemp();
             this.Hide();
             a.Show();
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            gestioncd a = new gestioncd();
-            this.Hide();
-            a.Show();
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -41,10 +36,12 @@ namespace GestionBiblio
 
         private void label5_Click(object sender, EventArgs e)
         {
-            DialogResult dialogClose = MessageBox.Show("Voulez vous vraiment fermer l'application ?", "Quitter le programme", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            DialogResult dialogClose = MessageBox.Show("Voulez vous vraiment fermer déconnecter ?", "Quitter le programme", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogClose == DialogResult.OK)
             {
-                Application.Exit();
+                Form1 form1 = new Form1();
+                this.Hide();
+                form1.Show();
             }
         }
 

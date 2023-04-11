@@ -49,9 +49,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(85)))));
             this.label1.Location = new System.Drawing.Point(481, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 26);
+            this.label1.Size = new System.Drawing.Size(335, 56);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenue sur BIB-EMSI";
+            this.label1.Text = "Bienvenue sur BIB-ENIT \r\ncrée par Chiheb & Akrem & Habib";
             // 
             // label2
             // 
@@ -61,9 +61,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(85)))));
             this.label2.Location = new System.Drawing.Point(483, 193);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
+            this.label2.Size = new System.Drawing.Size(106, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Username";
+            this.label2.Text = "Nom Utilisateur";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -73,9 +73,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(85)))));
             this.label3.Location = new System.Drawing.Point(483, 245);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 15);
+            this.label3.Size = new System.Drawing.Size(90, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Password";
+            this.label3.Text = "Mot de passe";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox1
@@ -84,6 +84,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(321, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -116,11 +117,12 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(85)))));
-            this.label4.Location = new System.Drawing.Point(483, 118);
+            this.label4.Location = new System.Drawing.Point(483, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 15);
+            this.label4.Size = new System.Drawing.Size(201, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Entrez vos identifiants ci-dessous";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox1
             // 
@@ -139,7 +141,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(225)))));
             this.label5.Location = new System.Drawing.Point(823, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 25);
+            this.label5.Size = new System.Drawing.Size(22, 27);
             this.label5.TabIndex = 8;
             this.label5.Text = "x";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,7 +154,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(225)))));
             this.label6.Location = new System.Drawing.Point(795, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(21, 25);
+            this.label6.Size = new System.Drawing.Size(21, 27);
             this.label6.TabIndex = 9;
             this.label6.Text = "_";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

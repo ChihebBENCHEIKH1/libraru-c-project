@@ -16,7 +16,7 @@ namespace GestionBiblio
     public partial class gestionlivre : Form
     {
 
-        string parametres = "SERVER=127.0.0.1; DATABASE=tp_csharp_db; UID=root; PASSWORD=";
+        string parametres = "SERVER=127.0.0.1; DATABASE=test; UID=root; PASSWORD=";
         private MySqlConnection maconnexion;
         DataTable dataTable = new DataTable();
         int currRowIndex;
@@ -88,12 +88,7 @@ namespace GestionBiblio
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            gestionperiodique a = new gestionperiodique();
-            this.Hide();
-            a.Show();
-        }
+        
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -102,19 +97,15 @@ namespace GestionBiblio
             a.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            gestioncd a = new gestioncd();
-            this.Hide();
-            a.Show();
-        }
-
+       
         private void label6_Click(object sender, EventArgs e)
         {
-            DialogResult dialogClose = MessageBox.Show("Voulez vous vraiment fermer l'application ?", "Quitter le programme", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            DialogResult dialogClose = MessageBox.Show("Voulez vous vraiment fermer déconnecter ?", "Quitter le programme", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (dialogClose == DialogResult.OK)
             {
-                Application.Exit();
+                Form1 form1 = new Form1();
+                this.Hide();
+                form1.Show();
             }
         }
 
@@ -228,6 +219,13 @@ namespace GestionBiblio
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            gestionemp gestionemp=new gestionemp();
+            this.Hide();
+            gestionemp.Show();
         }
     }
 }
